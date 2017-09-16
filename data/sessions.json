@@ -1,13 +1,12 @@
 [
-    {
-      "title": "Journey of Generosity",
-      "image": "http://via.placeholder.com/250x125/fff/666",
-      "description": "Learn how to enjoy the journey of generosity."
-    },
-    {
-      "title": "JOG Trainer Workshop",
-      "image": "http://via.placeholder.com/250x125/ddd/333",
-      "description": "Learn how to enjoy the journey of generosity and helping others."
-    }
-  ]
-  
+  {
+    "title": "Journey of Generosity",
+    "image": "http://via.placeholder.com/250x125/fff/666",
+    "description": "Learn how to enjoy the journey of generosity."
+  },
+  {
+    "title": "JOG Trainer Workshop",
+    "image": "http://via.placeholder.com/250x125/ddd/333",
+    "description": "Learn how to enjoy the journey of generosity and helping others."
+  }
+]

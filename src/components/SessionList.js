@@ -8,7 +8,7 @@ class SessionList extends Component {
         this.state = { sessions: [] };
     }
     componentWillMount() {
-        fetch('https://facebook.github.io/react-native/movies.json')
+        fetch('https://raw.githubusercontent.com/selvinortiz/ioscanner/master/data/sessions.json')
             .then((response) => response.json())
             .then((responseJson) => {
                 this.setState({
