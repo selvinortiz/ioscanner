@@ -9,21 +9,19 @@ class SessionList extends Component {
     }
     componentWillMount() {
         fetch('https://raw.githubusercontent.com/selvinortiz/ioscanner/master/data/sessions.json')
-            .then((response) => response.json())
-            .then((responseJson) => {
-                this.setState({
-                    sessions: responseJson.sessions
-                });
+            .then((response) => (response.ok ? response.json() : this.state.sessions))
+            .then((responseAsJson) => {
+                this.setState({ sessions: responseAsJson });
             })
             .catch((error) => {
-                console.log(error);
+                console.error(error);
             });
     }
 
     renderSessions() {
-        return this.state.sessions.map(session =>
-            <SessionDetail key={session.title} session={session}/>
-        );
+       return this.state.sessions.map((session) =>
+           <SessionDetail key={session.title} session={session} />
+       );
     }
 
     render() {
