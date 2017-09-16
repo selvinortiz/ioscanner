@@ -1,12 +1,23 @@
 [
     {
-      "title": "Journey of Generosity",
-      "image": "https://via.placeholder.com/96/fff/666",
-      "description": "Learn how to enjoy the journey of generosity."
+      "slug": "five-things-your-website-should-include-teleconference",
+      "title": "Five Things Your Website Should Include ",
+      "speaker": "Donald Miller",
+      "thumbnail": "https://s3.amazonaws.com/kawebresources/resourcelibrarythumbimages/img-resource-new-263x154-DonaldMiller.jpg",
+      "description": "At the StoryBrand Marketing Workshop he's worked with over 1,000 businesses, non-profits and personal brands to help them clarify their message. These are the 5 suggestions he most often makes to them regarding their websites."
     },
     {
-      "title": "JOG Trainer Workshop",
-      "image": "https://via.placeholder.com/96/ddd/333",
-      "description": "Learn how to enjoy the journey of generosity and helping others."
+      "slug": "charitable-overlays-for-advanced-estate-planning-strategies",
+      "title": "Charitable Overlays for Advanced Estate Planning Strategies",
+      "speaker": "Jeanne McMains",
+      "thumbnail": "https://s3.amazonaws.com/kawebresources/resourcelibrarythumbimages/img-resource-AC-McmainsJeanne-263x154.jpg",
+      "description": "This session explains how these advanced wealth transfer strategies work conceptually, and examines how our clients can leverage charitable overlays to help them bless loved ones and convert tax dollars into charitable dollars for greater Kingdom impact."
+    },
+    {
+      "slug": "nt-a-new-retirement-conversation",
+      "title": "A New Retirement Conversation",
+      "speaker": "Mitch Anthony",
+      "thumbnail": "https://s3.amazonaws.com/kawebresources/resourcelibrarythumbimages/img-AnnualConference2016-AnthonyMitch-263x154.jpg",
+      "description": "Ron Blue talks with Mitch Anthony about \"Avoiding Retirement Pitfalls.\" Ron will share some of his own personal journey answering the retirement question for himself, while Mitch will offer insights about common pitfalls based on his extensive work with clients on this topic."
     }
   ]
