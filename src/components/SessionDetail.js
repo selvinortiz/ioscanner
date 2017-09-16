@@ -1,43 +1,49 @@
 import React from 'react';
-import { View, Image, Text } from 'react-native';
+import { View, Image, Text, Linking, StyleSheet } from 'react-native';
 import Card from '../components/Card';
 import CardSection from '../components/CardSection';
 import Button from '../components/Button';
 
 const SessionDetail = ({ session }) => {
-    const { title, description, image } = session;
-    const { imageStyles, headerStyles } = styles;
+    const { title, speaker, slug, thumbnail } = session;
+    const { image, header } = styles;
+    const baseURL = 'https://kingdomadvisors.com/resources/';
+
     return (
         <Card>
             <CardSection>
                 <View>
                     <Image
-                        style={imageStyles}
-                        source={{ uri: image }}
+                        style={image}
+                        source={{ uri: thumbnail }}
                     />
                 </View>
-                <View style={headerStyles}>
+                <View style={header}>
                     <Text>{title}</Text>
-                    <Text>{description}</Text>
+                    <Text>by {speaker}</Text>
                 </View>
             </CardSection>
             <CardSection>
-                <Button />
+                <Button
+                    title="View Session"
+                    onPress={() => Linking.openURL(baseURL + slug)}
+                />
             </CardSection>
         </Card>
     );
 };
 
-const styles = {
-    headerStyles: {
+const styles = StyleSheet.create({
+    header: {
         flexDirection: 'column',
         justifyContent: 'space-around',
         padding: 10
     },
-    imageStyles: {
+    image: {
         width: 96,
         height: 96,
         padding: 10
     }
-};
+});
+
 export default SessionDetail;
