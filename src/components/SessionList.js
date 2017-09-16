@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { ScrollView } from 'react-native';
 import SessionDetail from '../components/SessionDetail';
 
 class SessionList extends Component {
@@ -28,9 +28,9 @@ class SessionList extends Component {
         console.log(this.state);
 
         return (
-            <View>
+            <ScrollView>
                 {this.renderSessions()}
-            </View>
+            </ScrollView>
         );
     }
 }
